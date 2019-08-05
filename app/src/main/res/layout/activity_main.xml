@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="liang.wust.com.twoprocess.MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_start_back_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动后台进程"
+        app:layout_constraintBottom_toTopOf="@+id/btn_end_back_service"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_end_back_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结束后台进程"
+        app:layout_constraintBottom_toTopOf="@+id/btn_end_remote_service"
+        app:layout_constraintEnd_toEndOf="@+id/btn_start_back_service"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_start_back_service"
+        app:layout_constraintTop_toBottomOf="@+id/btn_start_back_service" />
+
+    <Button
+        android:id="@+id/btn_end_remote_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结束守护进程"
+        app:layout_constraintBottom_toTopOf="@+id/btn_end_all_service"
+        app:layout_constraintEnd_toEndOf="@+id/btn_end_back_service"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_end_back_service"
+        app:layout_constraintTop_toBottomOf="@+id/btn_end_back_service" />
+
+    <Button
+        android:id="@+id/btn_end_all_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结束所有进程"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_end_remote_service"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_end_remote_service"
+        app:layout_constraintTop_toBottomOf="@+id/btn_end_remote_service" />
+</android.support.constraint.ConstraintLayout>
